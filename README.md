@@ -5,17 +5,19 @@
 ```txt
 START PROGRAM
 WHILE true
-    PROMPT asking if user wants to see contents of list
-    IF RESPONSE IS YES 
-        PRINT LIST
+    ASK if user wants to see contents of list
+    IF response is yes 
+        PRINT list
     ELSE
-        PROMPT asking if user wants to add new item
-            THEN INPUT NAME of new item
-            THEN INPUT CATEGORY of new item
-            THEN INPUT DESCRIPTION of new item
-            THEN INPUT COLOR of new item
-    PRINT UPDATED LIST
-    PROMPT asking if user wants to add another item
-        THEN REPEAT IF-ELSE
-EXIT PROGRAM by typing exit
+        ASK IF user wants to add new item
+            THEN INPUT name of new item
+            THEN INPUT category of new item
+            THEN INPUT description of new item
+            THEN INPUT color of new item
+    PRINT updated list
+    ASK if user wants to add another item
+        THEN repeat IF / ELSE
+    REQ INPUT 'exit' in console
+END WHILE
+EXIT PROGRAM when WHILE ends
 ```
