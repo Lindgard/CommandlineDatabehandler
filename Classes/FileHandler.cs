@@ -10,7 +10,7 @@ public class FileHandler : IFileHander
         }
         catch
         {
-            throw new NotImplementedException();
+            throw new FileNotFoundException();
         }
     }
 
@@ -20,11 +20,12 @@ public class FileHandler : IFileHander
     {
         try
         {
-            //* Print-logic for the list as it is
+            var readContent = File.ReadAllText(filePath);
+
         }
         catch
         {
-            throw new NotImplementedException();
+            throw new FileLoadException();
         }
     }
 }
