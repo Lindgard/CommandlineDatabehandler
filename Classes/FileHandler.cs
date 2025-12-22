@@ -1,12 +1,30 @@
+using System.Linq.Expressions;
+
 public class FileHandler : IFileHander
 {
     public void AppendFileContent(string? filePath, string? content)
     {
-        throw new NotImplementedException();
+        try
+        {
+
+        }
+        catch
+        {
+            throw new NotImplementedException();
+        }
     }
 
+    //! actual logic to be used in Program.cs should be made here
+    //! before being called on in Program.cs
     public void ReadFileContent(string? filePath)
     {
-        throw new NotImplementedException();
+        try
+        {
+            //* Print-logic for the list as it is
+        }
+        catch
+        {
+            throw new NotImplementedException();
+        }
     }
 }
